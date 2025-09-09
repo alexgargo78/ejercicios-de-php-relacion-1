@@ -1,2 +1,2 @@
-# ejercicios-de-php-relaci-n-1
+# ejercicios-de-php-relación 1
 Ejercicios de PHP – Relación I
