@@ -21,8 +21,22 @@
                 ::marker
                 "Realiza un conversor de euros a pesetas. La cantidad de euros que se quiere convertir se deberá introducir mediante un formulario."
             <br>
-            <a href="ejercicio-de-php-relacion-1/src/ejercicio01/index.php">Solución</a>
+            <a href="ejercicio01/index.php">Solución</a>
             </li>
+
+            <li>
+                ::marker
+                "Escribe un programa que calcule el total de una factura a partir de la base imponible. Se considera un IVA del 21%."
+            <br>
+            <a href="ejercicio02/index.php">Solución</a>
+            </li>
+            <li>
+                ::marker
+                "Escribe un programa que calcule el total de una factura a partir de la base imponible. Se considera un IVA del 21%."
+            <br>
+            <a href="ejercicio03/index.php">Solución</a>
+            </li>
+
         </ol>
     </div>
     
