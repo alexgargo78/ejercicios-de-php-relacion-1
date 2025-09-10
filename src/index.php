@@ -21,7 +21,7 @@
                 ::marker
                 "Realiza un conversor de euros a pesetas. La cantidad de euros que se quiere convertir se deberá introducir mediante un formulario."
             <br>
-            <a href="./src/ejercici01/index.html">Solución</a>
+            <a href="./src/ejercicio01/index.html">Solución</a>
             </li>
         </ol>
     </div>
