@@ -23,6 +23,8 @@
             <br>
             <a href="ejercicio01/index.php">Solución</a>
             </li>
+            <br>
+            <br>
 
             <li>
                 ::marker
@@ -30,9 +32,13 @@
             <br>
             <a href="ejercicio02/index.php">Solución</a>
             </li>
+            <br>
+            <br>
             <li>
                 ::marker
-                "Escribe un programa que calcule el total de una factura a partir de la base imponible. Se considera un IVA del 21%."
+                "Escribe un programa que calcule el volumen de un cono mediante la fórmula."
+                <i> v = (1/3)πr <sup>2</sup>h"</i>
+            <br>
             <br>
             <a href="ejercicio03/index.php">Solución</a>
             </li>
