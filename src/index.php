@@ -21,7 +21,7 @@
                 ::marker
                 "Realiza un conversor de euros a pesetas. La cantidad de euros que se quiere convertir se deberá introducir mediante un formulario."
             <br>
-            <a href="./src/ejercicio01/index.php">Solución</a>
+            <a href="ejercicio-de-php-relacion-1/src/ejercicio01/index.php">Solución</a>
             </li>
         </ol>
     </div>
