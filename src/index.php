@@ -9,12 +9,24 @@
     <link rel="stylesheet" href="./src/css/style.css">
     
 </head>
-<body>
-    <h1>Ejercicios de PHP - Relación 1</h1>
-    <p>Selecciona un ejercicio para probarlo:</p>
-    <ul>
-       
-    </ul>
+<body> 
+    <div id="container">
+        <div id="header">
+            <h1>Ejercicios de PHP - Relación I</h1>
+            <h2>Certificaciones de Profesionalidad</h2>
+        </div>
+        <div id="content"></div>
+        <ol>
+            <li>
+                ::marker
+                "Realiza un conversor de euros a pesetas. La cantidad de euros que se quiere convertir se deberá introducir mediante un formulario."
+            <br>
+            <a href="./src/ejercici01/index.html">Solución</a>
+            </li>
+        </ol>
+    </div>
+    
+    
 </body>
 </html>
 

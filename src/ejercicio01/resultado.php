@@ -12,6 +12,7 @@
     
     ?>
     <h1><?= $conversion ?></h1>
-</p>
+
+    <p><a href="./src/index.php">pagina principal</a></p>
 </body>
 </html>
