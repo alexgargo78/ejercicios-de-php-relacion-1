@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Resultado Factura</title>
+    <title>Resultado Iva</title>
 </head>
 <body>
     <h2>Resultado del cálculo</h2>
