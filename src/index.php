@@ -37,7 +37,9 @@
             <li>
                 ::marker
                 "Escribe un programa que calcule el volumen de un cono mediante la fórmula."
-                <i> v = (1/3)πr <sup>2</sup>h"</i>
+                <br>
+                <br>
+                <i> " v = (1/3)πr <sup>2</sup>h "</i>
             <br>
             <br>
             <a href="ejercicio03/index.php">Solución</a>
