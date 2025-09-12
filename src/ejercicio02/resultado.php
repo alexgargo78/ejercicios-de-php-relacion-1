@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <title>Resultado Iva</title>
 </head>
+
 <body>
     <h2>Resultado del cálculo</h2>
 
@@ -20,6 +22,8 @@
         echo "<p>No se ha introducido ninguna base imponible.</p>";
     }
     ?>
+    <p><a href="index.php">Volver al ejercicio</a></p>
     <p><a href="../index.php">pagina principal</a></p>
 </body>
+
 </html>
