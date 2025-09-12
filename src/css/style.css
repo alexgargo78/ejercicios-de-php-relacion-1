@@ -1,7 +1,13 @@
+header{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background: blueviolet;
+}
+
 body {
             font-family: Arial, sans-serif;
             background: #f4f4f9;
             color: #333;
-            text-align: center;
+            text-align: left;
         }
         

@@ -9,12 +9,13 @@
 <body>
     <h2>Calculadora de IVA (21%)</h2>
 
-    <form action="resultado.php" method="post">
+    <form method="get" action="resultado.php">
         <label for="base">Base imponible (€):</label>
         <input type="number" step="0.01" name="base" id="base" required>
         <button type="submit">Calcular</button>
     </form>
-    <p><a href="../index.php">pagina principal</a></p>
+
+    <p><a href="../index.php">🏠 pagina principal</a></p>
 </body>
 
 </html>
