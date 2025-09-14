@@ -4,18 +4,31 @@
 <head>
     <meta charset="UTF-8">
     <title>Calculadora de Iva</title>
+    <link rel="stylesheet" href="../css/style.css" />
 </head>
 
 <body>
-    <h2>Calculadora de IVA (21%)</h2>
+    <div id="container">
+        <div id="header">
+            <h1>
+                Ejercicios de PHP – Relación I
+            </h1>
+            <h2>Certificaciones de Profesionalidad</h2>
+        </div>
+        <div id="content">
+            <h2>Cálculo del total de una factura</h2>
+            <form action="resultado.php" method="get">
+                Base imponible (en euros)
+                <input type="number" name="x" min="0" step="0.01" autofocus>
+                <input type="submit" value="Aceptar">
+            </form>
+            <p><a href="../index.php">🏠 pagina principal</a></p>
+        </div>
 
-    <form method="get" action="resultado.php">
-        <label for="base">Base imponible (€):</label>
-        <input type="number" step="0.01" name="base" id="base" required>
-        <button type="submit">Calcular</button>
-    </form>
-
-    <p><a href="../index.php">🏠 pagina principal</a></p>
+        <div id="footer">
+            2025 © Alejandro García Gómez.
+        </div>
+    </div>
 </body>
 
 </html>

@@ -1,29 +1,40 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <title>Resultado Iva</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultado del cálculo de Euros a Pesetas</title>
+    <link rel="stylesheet" href="../css/style.css" />
 </head>
 
 <body>
-    <h2>Resultado del cálculo</h2>
+    <div id="container">
+        <div id="header">
+            <h1>Ejercicios de PHP – Relación I</h1>
+            <h2>Certificaciones de Profesionalidad</h2>
+        </div>
 
-    <?php
-    $base = $_GET["base"] ?? 0;
-    $iva = $base * 0.21;
-    $total = $base + $iva;
-    ?>
-    
-
+        <div id="content"><h2>Resultado del cálculo</h2>
         
-    <p>Base imponible: <?= $base ?> €</p>
-    <p>IVA (21%): <?= $iva ?> €</p>
-    <p>Total: <?= $total ?> €</p>
-   
-    
-    <p><a href="index.php">⬅ Volver al ejercicio</a></p>
-    <p><a href="../index.php">🏠 pagina principal</a></p>
+       <?php
+
+        $x = $_GET["x"];
+        $iva = $x * 0.21;
+        $total = $x + $iva;
+
+        echo "<p>Base imponible: $x €</p>";
+        echo "<p>IVA (21%): $iva €</p>";
+        echo "<p>Total: $total €</p>";
+
+        ?>
+            <p><a href="index.php">← Volver al ejercicio</a></p>
+            <p><a href="../index.php">🏠 página principal</a></p>
+        </div>
+        <div id="footer">2025 © Alejandro García Gómez.</div>
+    </div>
+
+
 </body>
 
 </html>
