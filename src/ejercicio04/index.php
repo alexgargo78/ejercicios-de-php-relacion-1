@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Saludo según la hora</title>
-    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/style.css"/>
 </head>
 
 <body>
@@ -22,7 +22,7 @@
                 <label for="h">Introduce la hora (0–23):</label>
                 <input type="number" id="h" name="h" min="0" max="23" required>
                 <button type="submit">Saludar</button>
-            </form>
+            </form>            
 
             <p><a href="../index.php">🏠 pagina principal</a></p>
         </div>

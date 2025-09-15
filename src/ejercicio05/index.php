@@ -11,14 +11,12 @@
 <body>
     <div id="container">
         <div id="header">
-            <h1>
-                Ejercicios de PHP – Relación I
-            </h1>
+            <h1>Ejercicios de PHP – Relación I</h1>
             <h2>Certificaciones de Profesionalidad</h2>
         </div>
         <div id="content">
             Por favor, introduzca el número de horas trabajadas durante la semana: <br>
-            <form action="ejerccio05.php" method="post">
+            <form method="post" action="resultado.php">
                 <input type="text" name="horasTrabajadas" autofocus><br>
                 <input type="submit" value="Aceptar">
             </form>
