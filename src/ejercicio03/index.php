@@ -32,7 +32,7 @@
             </form>
 
             <p><a href="../index.php">🏠 pagina principal</a></p>
-</div>
+        </div>
         <div id="footer">
             2025 © Alejandro García Gómez.
         </div>

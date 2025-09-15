@@ -16,14 +16,7 @@
 
         <div id="content">
             <?php
-$h = $_POST["h"] ?? 0;
 
-// Usamos match (sin if/else)
-$msg = match (true) {
-    $h >= 6 && $h <= 12 => "Buenos días",
-    $h >= 13 && $h <= 20 => "Buenas tardes",
-    default              => "Buenas noches",
-};
 ?>
             <h1>Resultado del saludo según la hora</h1>
 
