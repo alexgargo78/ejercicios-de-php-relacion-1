@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resultado Saludo según la hora</title>
     <link rel="stylesheet" href="../css/style.css" />
 </head>
@@ -23,6 +24,7 @@ $msg = match (true) {
     $h >= 6 && $h <= 12 => "Buenos días",
     $h >= 13 && $h <= 20 => "Buenas tardes",
     default              => "Buenas noches",
+    
 };
 ?>
             <h1>Resultado del saludo según la hora</h1>

@@ -31,7 +31,7 @@
     
 
     ?>
-            
+
 
             <p><a href="index.php">← Volver al ejercicio</a></p>
             <p><a href="../index.php">🏠 página principal</a></p>

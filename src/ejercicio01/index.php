@@ -10,7 +10,6 @@
 </head>
 
 <body>
-<body>
     <div id="container">
       <div id="header">
         <h1>Ejercicios de PHP – Relación I</h1>
