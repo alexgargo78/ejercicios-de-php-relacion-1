@@ -25,7 +25,7 @@
 
 
             ?>
-            <h1>Resultado del saludo según la hora</h1>
+            <h1>Resultado </h1>
 
             <p>Hora introducida: <strong><?= (int)$h ?>:<?= str_pad((int)$m, 2, '0', STR_PAD_LEFT) ?></strong></p>
             <p>Faltan <strong><?= $faltan ?></strong> segundos para la medianoche.</p>

@@ -41,7 +41,7 @@
             }
 
             ?>
-            <h1>Resultado del saludo según la hora</h1>
+            <h1>Resultado</h1>
 
             <p>Números introducidos:
                 <strong><?= $a ?>, <?= $b ?>, <?= $c ?></strong>
