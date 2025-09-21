@@ -16,7 +16,7 @@
             <h2>Certificaciones de Profesionalidad</h2>
         </div>
         <div id="content">
-            <h2>Cálculo del total de una factura</h2>
+            <h2>Cálculo para saber el Iva</h2>
             <form action="resultado.php" method="post">
                 Base imponible (en euros)
                 <input type="number" name="x" min="0" step="0.01" autofocus>

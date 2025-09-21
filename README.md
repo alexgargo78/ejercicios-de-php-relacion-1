@@ -1,5 +1,5 @@
 # ejercicios-de-php-relación 1
-Ejercicios de PHP – Relación I
+Ejercicios de PHP – Relación I 
 
 # indice de ejercicios
 <img width="619" height="802" alt="image" src="https://github.com/user-attachments/assets/0aa083a1-1bc6-4a1e-a461-e9a57a23f5e3" />
