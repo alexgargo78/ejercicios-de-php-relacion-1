@@ -1,41 +1,44 @@
-<!DOCTYPE html>
-<html lang="es">
+ <?php
+  $n = isset($_POST['n']) ? (int)$_POST['n'] : 0;
 
-<head>
-    <meta charset="UTF-8">
-    <title>Resultado Saludo según la hora</title>
-    <link rel="stylesheet" href="../css/style.css" />
-</head>
-
-<body>
-    <div id="container">
-        <div id="header">
-            <h1>Ejercicios de PHP – Relación I</h1>
-            <h2>Certificaciones de Profesionalidad</h2>
-        </div>
-
-        <div id="content">
-            <?php
-$h = $_POST["h"] ?? 0;
-
-// Usamos match (sin if/else)
-$msg = match (true) {
-    $h >= 6 && $h <= 12 => "Buenos días",
-    $h >= 13 && $h <= 20 => "Buenas tardes",
-    default              => "Buenas noches",
-};
+  // Calcular factorial
+  if ($n < 0) {
+    $mensaje = "El factorial no está definido para números negativos.";
+  } else {
+    $factorial = 1;
+    for ($i = 1; $i <= $n; $i++) {
+      $factorial *= $i;
+    }
+    $mensaje = "El factorial de $n es <strong>$factorial</strong>";
+  }
 ?>
-            <h1>Resultado del saludo según la hora</h1>
+ <!DOCTYPE html>
+ <html lang="es">
 
-            <p>Hora introducida: <strong><?= $h ?>:00</strong></p>
-            <p><strong><?= $msg ?></strong></p>
+ <head>
+     <meta charset="UTF-8">
+     <title>Factorial de un número entero</title>
+     <link rel="stylesheet" href="../css/style.css" />
+ </head>
 
-            <p><a href="index.php">← Volver al ejercicio</a></p>
-            <p><a href="../index.php">🏠 página principal</a></p>
-        </div>
-        <div id="footer">2025 © Alejandro García Gómez.</div>
-    </div>
+ <body>
+     <div id="container">
+         <div id="header">
+             <h1>Ejercicios de PHP – Relación I</h1>
+             <h2>Certificaciones de Profesionalidad</h2>
+         </div>
 
-</body>
+         <div id="content">
 
-</html>
+             <h2>Resultado</h2>
+             <p><?= $mensaje ?></p>
+
+             <p><a href="index.php">← Volver al ejercicio</a></p>
+             <p><a href="../index.php">🏠 página principal</a></p>
+         </div>
+         <div id="footer">2025 © Alejandro García Gómez.</div>
+     </div>
+
+ </body>
+
+ </html>

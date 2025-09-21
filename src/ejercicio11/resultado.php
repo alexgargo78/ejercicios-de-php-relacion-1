@@ -1,3 +1,15 @@
+<?php
+$n = $_POST["n"] ?? 0;
+
+// Generar la serie de Fibonacci
+$serie = [];
+if ($n >= 1) $serie[] = 0;
+if ($n >= 2) $serie[] = 1;
+
+for ($i = 2; $i < $n; $i++) {
+    $serie[] = $serie[$i - 1] + $serie[$i - 2];
+}
+?>
 <!DOCTYPE html>
 <html lang="es">
 
@@ -15,21 +27,19 @@
         </div>
 
         <div id="content">
+            
+            <?php 
+                if ($n > 0):
+            ?>
+                <p>Has pedido <?= $n ?> términos de la serie de Fibonacci:</p>
+                <p><strong><?= implode(", ", $serie) ?></strong></p>
+            <?php 
+                else: 
+            ?>
+                <p>No se ha introducido un número válido.</p>
             <?php
-$h = $_POST["h"] ?? 0;
-
-// Usamos match (sin if/else)
-$msg = match (true) {
-    $h >= 6 && $h <= 12 => "Buenos días",
-    $h >= 13 && $h <= 20 => "Buenas tardes",
-    default              => "Buenas noches",
-};
-?>
-            <h1>Resultado del saludo según la hora</h1>
-
-            <p>Hora introducida: <strong><?= $h ?>:00</strong></p>
-            <p><strong><?= $msg ?></strong></p>
-
+                 endif;
+            ?>
             <p><a href="index.php">← Volver al ejercicio</a></p>
             <p><a href="../index.php">🏠 página principal</a></p>
         </div>

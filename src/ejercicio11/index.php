@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Número de horas trabajadas durante la semana</title>
+    <title>Escribe un programa que muestre los n primeros términos de la serie de Fibonacci.</title>
     <link rel="stylesheet" href="../css/style.css" />
 </head>
 
@@ -17,10 +17,12 @@
             <h2>Certificaciones de Profesionalidad</h2>
         </div>
         <div id="content">
-            Por favor, introduzca el número de horas trabajadas durante la semana: <br>
-            <form action="ejerccio05.php" method="post">
-                <input type="text" name="horasTrabajadas" autofocus><br>
-                <input type="submit" value="Aceptar">
+            Este programa muestra los n primeros números de la serie de Fibonacci.<br><br>
+            Por favor, introduzca n:<br><br>
+
+            <form action="resultado.php" method="post">
+                <input type="number" name="n" min="1" required>
+                <input type="submit" value="Mostrar">
             </form>
             <p><a href="../index.php">🏠 pagina principal</a></p>
         </div>

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Resultado Saludo según la hora</title>
-    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/style.css?v=<?php echo time(); ?>">
 </head>
 
 <body>
@@ -15,20 +15,25 @@
         </div>
 
         <div id="content">
+
             <?php
-$h = $_POST["h"] ?? 0;
 
-// Usamos match (sin if/else)
-$msg = match (true) {
-    $h >= 6 && $h <= 12 => "Buenos días",
-    $h >= 13 && $h <= 20 => "Buenas tardes",
-    default              => "Buenas noches",
-};
-?>
-            <h1>Resultado del saludo según la hora</h1>
+            if (isset($_POST["n"])) {
+            
+                $n = (int) $_POST["n"];
+            echo "<h2>Tabla del $n</h2>";
+            echo "<table border='1' cellpadding='5'>";
+            
+            for ($i = 0; $i <= 10; $i++) {
+                echo "<tr><td>$n x $i = " . ($n * $i) . "</td></tr>";
+            }
+            echo "</table>";
+            }
 
-            <p>Hora introducida: <strong><?= $h ?>:00</strong></p>
-            <p><strong><?= $msg ?></strong></p>
+            ?>
+
+            <h1>Resultado completo de la tabla</h1>
+
 
             <p><a href="index.php">← Volver al ejercicio</a></p>
             <p><a href="../index.php">🏠 página principal</a></p>

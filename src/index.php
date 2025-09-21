@@ -8,15 +8,20 @@
      <meta charset="UTF-8">
      <title>Ejercicios de PHP - Relación 1</title>
      <link rel="stylesheet" href="./css/style.css">
+     <link rel="stylesheet" href="./img/perfil.jpg">
 
  </head>
 
  <body>
      <div id="container">
          <div id="header">
-             <h1>Ejercicios de PHP - Relación I</h1>
-             <h2>Certificaciones de Profesionalidad</h2>
+             <div class="title">
+                 <h1>Ejercicios de PHP - Relación I</h1>
+                 <h2>Certificaciones de Profesionalidad</h2>
+             </div>
+             <img src="img/perfil.jpg" alt="Foto de Perfil" class="foto-perfil">
          </div>
+
          <div id="content"></div>
          <ol>
              <li>"Realiza un conversor de euros a pesetas. La cantidad de euros que se quiere convertir se deberá
@@ -58,26 +63,26 @@
              <li>
                  Escribe un programa que nos diga el horóscopo a partir del día y
                  el mes de nacimiento.
-                 <br /><a href="ejercicio06.php">&gt;&gt; Solución</a>
+                 <br /><a href="ejercicio06/index.php">&gt;&gt; Solución</a>
              </li>
 
              <li>
                  Escribe un programa que dada una hora determinada (horas y minutos),
                  calcule los segundos que faltan para llegar a la medianoche.
-                 <br /><a href="ejercicio07.php">&gt;&gt; Solución</a>
+                 <br /><a href="ejercicio07/index.php">&gt;&gt; Solución</a>
              </li>
 
              <li>
                  Escribe un programa que ordene, de menor a mayor, tres números
                  enteros introducidos por teclado.
-                 <br /><a href="ejercicio08.php">&gt;&gt; Solución</a>
+                 <br /><a href="ejercicio08/index.php">&gt;&gt; Solución</a>
              </li>
 
              <li>
                  Muestra la tabla de multiplicar de un número introducido por
                  teclado. El resultado se debe mostrar en una tabla (etiqueta
                  "table" de HTML).
-                 <br /><a href="ejercicio09.php">&gt;&gt; Solución</a>
+                 <br /><a href="ejercicio09/index.php">&gt;&gt; Solución</a>
              </li>
 
              <li>
@@ -86,7 +91,7 @@
                  cuántos números se introducirán. El usuario indicará que ha
                  terminado de introducir los datos cuando meta un número negativo.
                  Ese último número que indica el final no se computa en la media.
-                 <br /><a href="ejercicio10.php">&gt;&gt; Solución</a>
+                 <br /><a href="ejercicio10/index.php">&gt;&gt; Solución</a>
              </li>
 
              <li>
@@ -95,7 +100,7 @@
                  segundo es 1 y el resto se calcula sumando los dos anteriores, por
                  lo que tendríamos que los términos son 0, 1, 1, 2, 3, 5, 8, 13, 21,
                  34, 55, 89, 144... El número n se debe introducir por teclado.
-                 <br /><a href="ejercicio11.php">&gt;&gt; Solución</a>
+                 <br /><a href="ejercicio11/index.php">&gt;&gt; Solución</a>
              </li>
 
              <li>
@@ -103,13 +108,13 @@
                  se debe pedir por teclado mediante un formulario. La pirámide estará
                  hecha de bolitas, ladrillos o cualquier otra imagen de las 5 que se
                  deben dar a elegir mediante un formulario.
-                 <br /><a href="ejercicio12.php">&gt;&gt; Solución</a>
+                 <br /><a href="ejercicio12/index.php">&gt;&gt; Solución</a>
              </li>
 
              <li>
                  Escribe un programa que calcule el factorial de un número entero
                  leído por teclado.
-                 <br /><a href="ejercicio13.php">&gt;&gt; Solución</a>
+                 <br /><a href="ejercicio13/index.php">&gt;&gt; Solución</a>
              </li>
 
              <li>
@@ -119,7 +124,7 @@
                  partir del nombre de la figura de la carta. Asegúrate de que
                  no se repite ninguna carta, igual que si las hubieras cogido
                  de una baraja de verdad.
-                 <br /><a href="ejercicio14.php">&gt;&gt; Solución</a>
+                 <br /><a href="ejercicio14/index.php">&gt;&gt; Solución</a>
              </li>
 
              <li>
@@ -130,7 +135,7 @@
                  puede saltar la figura. El alfil se mueve siempre en diagonal.
                  El tablero cuenta con 64 casillas. Las columnas se indican con
                  las letras de la "a" a la "h" y las filas se indican del 1 al 8.
-                 <br /><a href="ejerccicio15.php">&gt;&gt; Solución</a>
+                 <br /><a href="ejercicio15/index.php">&gt;&gt; Solución</a>
              </li>
 
 

@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Saludo según la hora</title>
-    <link rel="stylesheet" href="../css/style.css"/>
+    <link rel="stylesheet" href="../css/style.css?v=<?php echo time(); ?>">
 </head>
 
 <body>
@@ -16,9 +16,9 @@
         </div>
         <div id="content">
 
-            <h1>Saludo según la hora</h1>
+            <h2>Saludo según la hora</h2>
 
-            <form method="post" action="resultado.php">
+            <form action="resultado.php" method="post">
                 <label for="h">Introduce la hora (0–23):</label>
                 <input type="number" id="h" name="h" min="0" max="23" required>
                 <button type="submit">Saludar</button>

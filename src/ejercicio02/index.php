@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <title>Calculadora de Iva</title>
-    <link rel="stylesheet" href="../css/style.css" />
+     <link rel="stylesheet" href="../css/style.css?v=<?php echo time(); ?>">
 </head>
 
 <body>
@@ -17,7 +17,7 @@
         </div>
         <div id="content">
             <h2>Cálculo del total de una factura</h2>
-            <form action="resultado.php" method="get">
+            <form action="resultado.php" method="post">
                 Base imponible (en euros)
                 <input type="number" name="x" min="0" step="0.01" autofocus>
                 <input type="submit" value="Aceptar">

@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Número de horas trabajadas durante la semana</title>
-    <link rel="stylesheet" href="../css/style.css"/>
+    <link rel="stylesheet" href="../css/style.css?v=<?php echo time(); ?>">
 </head>
+
 <body>
     <div id="container">
         <div id="header">
@@ -15,12 +16,13 @@
         </div>
         <div id="content">
             <h1>Este programa ordena tres números.</h1><br>
-            <form  method="post" action="resultado.php">
-                Número 1 <input type="number" name="a"><br>
-                Número 2 <input type="number" name="b"><br>
-                Número 3 <input type="number" name="c"><br>
+            <form action="resultado.php" method="post">
+                Número 1 <input type="number" name="a"><br><br>
+                Número 2 <input type="number" name="b"><br><br>
+                Número 3 <input type="number" name="c"><br><br>
                 <input type="submit" value="Aceptar">
-            </form>            
+            </form>
+            
             <p><a href="../index.php">🏠 pagina principal</a></p>
         </div>
         <div id="footer">
@@ -28,4 +30,5 @@
         </div>
     </div>
 </body>
+
 </html>

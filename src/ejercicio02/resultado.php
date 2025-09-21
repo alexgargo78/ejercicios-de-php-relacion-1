@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resultado del cálculo de Euros a Pesetas</title>
-    <link rel="stylesheet" href="../css/style.css" />
+     <link rel="stylesheet" href="../css/style.css?v=<?php echo time(); ?>">
 </head>
 
 <body>
@@ -19,7 +19,7 @@
         
        <?php
 
-        $x = $_GET["x"];
+        $x = $_POST["x"];
         $iva = $x * 0.21;
         $total = $x + $iva;
 

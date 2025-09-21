@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Número de horas trabajadas durante la semana</title>
-    <link rel="stylesheet" href="../css/style.css" />
+    <title>Brisca: 10 Cartas al azar y puntuación</title>
+    <link rel="stylesheet" href="../css/style.css?v=<?php echo time(); ?>">
 </head>
 
 <body>
@@ -17,17 +17,23 @@
             <h2>Certificaciones de Profesionalidad</h2>
         </div>
         <div id="content">
-            Por favor, introduzca el número de horas trabajadas durante la semana: <br>
-            <form action="ejerccio05.php" method="post">
-                <input type="text" name="horasTrabajadas" autofocus><br>
-                <input type="submit" value="Aceptar">
-            </form>
-            <p><a href="../index.php">🏠 pagina principal</a></p>
+            <div id="content">
+                <h2>Brisca: 10 Cartas al azar</h2>
+                <p>Pulsa el botón para repartir 10 cartas de la baraja española y calcular los puntos.
+                </p>
+
+                <form action="resultado.php" method="post">
+                    <input type="hidden" name="repartir" value="1">
+                    <input type="submit" value="Repartir cartas">
+                </form>
+
+
+                <p><a href="../index.php">🏠 pagina principal</a></p>
+            </div>
+            <div id="footer">
+                2025 © Alejandro García Gómez.
+            </div>
         </div>
-        <div id="footer">
-            2025 © Alejandro García Gómez.
-        </div>
-    </div>
 
 
 </body>

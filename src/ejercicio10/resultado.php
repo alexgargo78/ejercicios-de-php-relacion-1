@@ -1,9 +1,29 @@
+<?php
+    $n = $_POST['n'] ?? 0;
+    $total = $_POST['total'] ?? 0;
+    $cuenta = $_POST['cuentaNumeros'] ?? 0;
+
+    if ($n >= 0) {
+        $total += $n;
+        $cuenta++;
+        $mensaje = "Número $n añadido. Introduce otro número o un negativo para calcular la media.";
+        $terminado = false;
+    } else {
+        if ($cuenta > 0) {
+            $media = $total / $cuenta;
+            $mensaje = "La media de los $cuenta números introducidos es <strong>" . number_format($media, 2, ',', '.') . "</strong>.";
+        } else {
+            $mensaje = "No se introdujeron números válidos.";
+        }
+        $terminado = true;
+    }
+?>
 <!DOCTYPE html>
 <html lang="es">
 
 <head>
     <meta charset="UTF-8">
-    <title>Resultado Saludo según la hora</title>
+    <title>Cálcula la media de numeros positivos introducidos</title>
     <link rel="stylesheet" href="../css/style.css" />
 </head>
 
@@ -13,29 +33,25 @@
             <h1>Ejercicios de PHP – Relación I</h1>
             <h2>Certificaciones de Profesionalidad</h2>
         </div>
-
         <div id="content">
-            <?php
-$h = $_POST["h"] ?? 0;
+            <p><?= $mensaje ?></p>
 
-// Usamos match (sin if/else)
-$msg = match (true) {
-    $h >= 6 && $h <= 12 => "Buenos días",
-    $h >= 13 && $h <= 20 => "Buenas tardes",
-    default              => "Buenas noches",
-};
-?>
-            <h1>Resultado del saludo según la hora</h1>
+            <?php if (!$terminado): ?>
+            <form action="resultado.php" method="post">
+                <input type="number" name="n" autofocus required>
+                <input type="hidden" name="total" value="<?= $total ?>">
+                <input type="hidden" name="cuentaNumeros" value="<?= $cuenta ?>">
+                <input type="submit" value="Aceptar">
+            </form>
+            <?php else: ?>
+            <p><a href="index.php">⬅ Volver a empezar</a></p>
+            <?php endif; ?>
 
-            <p>Hora introducida: <strong><?= $h ?>:00</strong></p>
-            <p><strong><?= $msg ?></strong></p>
 
-            <p><a href="index.php">← Volver al ejercicio</a></p>
-            <p><a href="../index.php">🏠 página principal</a></p>
+            <p><a href="../index.php">🏠 Página principal</a></p>
+            <div id="footer">2025 © Alejandro García Gómez.</div>
         </div>
-        <div id="footer">2025 © Alejandro García Gómez.</div>
     </div>
-
 </body>
 
 </html>

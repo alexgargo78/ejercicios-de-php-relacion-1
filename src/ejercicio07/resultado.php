@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Resultado Saludo según la hora</title>
-    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/style.css?v=<?php echo time(); ?>">
 </head>
 
 <body>
@@ -15,13 +15,21 @@
         </div>
 
         <div id="content">
-            <?php
 
-?>
+            <?php
+            $h = $_POST['hora'] ?? 0;
+            $m = $_POST['minuto'] ?? 0;
+
+            $segundosPasados = ($h * 3600) + ($m * 60);
+            $faltan = (24 * 3600) - $segundosPasados;
+
+
+            ?>
             <h1>Resultado del saludo según la hora</h1>
 
-            <p>Hora introducida: <strong><?= $h ?>:00</strong></p>
-            <p><strong><?= $msg ?></strong></p>
+            <p>Hora introducida: <strong><?= (int)$h ?>:<?= str_pad((int)$m, 2, '0', STR_PAD_LEFT) ?></strong></p>
+            <p>Faltan <strong><?= $faltan ?></strong> segundos para la medianoche.</p>
+
 
             <p><a href="index.php">← Volver al ejercicio</a></p>
             <p><a href="../index.php">🏠 página principal</a></p>

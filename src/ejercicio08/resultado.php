@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Resultado Saludo según la hora</title>
-    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/style.css?v=<?php echo time(); ?>">
 </head>
 
 <body>
@@ -16,19 +16,39 @@
 
         <div id="content">
             <?php
-$h = $_POST["h"] ?? 0;
+            $a = $_POST['a'] ?? 0;
+            $b = $_POST['b'] ?? 0;
+            $c = $_POST['c'] ?? 0;
 
-// Usamos match (sin if/else)
-$msg = match (true) {
-    $h >= 6 && $h <= 12 => "Buenos días",
-    $h >= 13 && $h <= 20 => "Buenas tardes",
-    default              => "Buenas noches",
-};
-?>
+            if ($a <= $b && $a <= $c) {
+                if ($b <= $c) {
+                    $ordenados = [$a, $b, $c];
+                } else {
+                    $ordenados = [$a, $c, $b];
+                }
+            } elseif ($b <= $a && $b <= $c) {
+                if ($a <= $c) {
+                    $ordenados = [$b, $a, $c];
+                } else {
+                    $ordenados = [$b, $c, $a];
+                }
+            } else { // $c es el menor
+                if ($a <= $b) {
+                    $ordenados = [$c, $a, $b];
+                } else {
+                    $ordenados = [$c, $b, $a];
+                }
+            }
+
+            ?>
             <h1>Resultado del saludo según la hora</h1>
 
-            <p>Hora introducida: <strong><?= $h ?>:00</strong></p>
-            <p><strong><?= $msg ?></strong></p>
+            <p>Números introducidos:
+                <strong><?= $a ?>, <?= $b ?>, <?= $c ?></strong>
+            </p>
+            <p>Ordenados de menor a mayor:
+                <strong><?= implode(", ", $ordenados) ?></strong>
+            </p>
 
             <p><a href="index.php">← Volver al ejercicio</a></p>
             <p><a href="../index.php">🏠 página principal</a></p>

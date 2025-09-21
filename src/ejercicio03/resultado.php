@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Volumen del cono</title>
-    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/style.css?v=<?php echo time(); ?>">
 </head>
 
 <body>
@@ -21,8 +21,8 @@
             <?php
 
          
-    $radio = $_GET["radio"];
-    $altura = $_GET["altura"];
+    $radio = $_POST["radio"];
+    $altura = $_POST["altura"];
 
     $calcular = (pi() * ($radio ** 2) * $altura) / 3;
     echo "<p>El volumen de un cono de radio <strong>$radio</strong> y altura <strong>$altura</strong> es:</p>";

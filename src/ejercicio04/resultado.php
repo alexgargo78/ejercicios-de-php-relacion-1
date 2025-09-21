@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resultado Saludo según la hora</title>
-    <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/style.css?v=<?php echo time(); ?>">
 </head>
 
 <body>
@@ -17,16 +17,16 @@
 
         <div id="content">
             <?php
-$h = $_POST["h"] ?? 0;
+                $h = $_POST["h"] ?? 0;
 
-// Usamos match (sin if/else)
-$msg = match (true) {
-    $h >= 6 && $h <= 12 => "Buenos días",
-    $h >= 13 && $h <= 20 => "Buenas tardes",
-    default              => "Buenas noches",
-    
-};
-?>
+                // Usamos match (sin if/else)
+                $msg = match (true) {
+                    $h >= 6 && $h <= 12 => "Buenos días",
+                    $h >= 13 && $h <= 20 => "Buenas tardes",
+                    default              => "Buenas noches",
+                    
+                };
+             ?>
             <h1>Resultado del saludo según la hora</h1>
 
             <p>Hora introducida: <strong><?= $h ?>:00</strong></p>
