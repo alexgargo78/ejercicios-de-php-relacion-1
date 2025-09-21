@@ -18,7 +18,6 @@ solucion
 
 <img width="638" height="343" alt="image" src="https://github.com/user-attachments/assets/c093ba92-7a70-4438-94c2-9b91c4d3ee56" />
 
-
 # ejercicio 3 
 <img width="645" height="386" alt="image" src="https://github.com/user-attachments/assets/930d913e-1dc6-47c9-b252-1da70f104de0" />
 
@@ -47,46 +46,58 @@ solucion
 
 <img width="673" height="280" alt="image" src="https://github.com/user-attachments/assets/93b2fb16-dd76-452d-b280-ce0a07df4d96" />
 
-
 # ejercicio 7 
+<img width="635" height="324" alt="image" src="https://github.com/user-attachments/assets/0c9ed255-c214-4943-806f-d771c85e9eb6" />
 
 solucion
+<img width="646" height="352" alt="image" src="https://github.com/user-attachments/assets/97cb701c-f9ae-4fd0-98d5-e89167356852" />
 
+# ejercicio 8
+<img width="642" height="392" alt="image" src="https://github.com/user-attachments/assets/894a5560-dce0-48b6-bef8-365c543c9b9c" />
+
+solucion
+<img width="641" height="347" alt="image" src="https://github.com/user-attachments/assets/4bea0383-eabf-4217-9293-31da02d8068b" />
 
 # ejercicio 9 
+<img width="639" height="296" alt="image" src="https://github.com/user-attachments/assets/405b8bf8-3201-4814-8bb6-ec8cc8ff9fb0" />
 
 solucion
-
+<img width="638" height="547" alt="image" src="https://github.com/user-attachments/assets/3606979d-24f0-49a5-a896-ae48ce690d21" />
 
 # ejercicio 10 
-
+<img width="652" height="289" alt="image" src="https://github.com/user-attachments/assets/c38e980e-a209-45dd-86e7-c3bf8f9df485" />
 
 solucion
-
+<img width="644" height="279" alt="image" src="https://github.com/user-attachments/assets/2fa7e551-9ac6-421e-97cf-8f76efcd9f09" />
 
 # ejercicio 11 
+<img width="639" height="300" alt="image" src="https://github.com/user-attachments/assets/d492db49-90d8-4817-8b10-d0e42fed5052" />
 
 solucion
+<img width="635" height="307" alt="image" src="https://github.com/user-attachments/assets/ff878c78-c68e-4a96-a4f4-97139c0d32e0" />
 
-
-# ejercicio 12 
-
+# ejercicio 12
+<img width="642" height="301" alt="image" src="https://github.com/user-attachments/assets/906c633f-f561-4d43-9b3f-a780cc84066e" />
 
 solucion
-
+<img width="630" height="498" alt="image" src="https://github.com/user-attachments/assets/4b61a5ed-5fad-474a-9f99-c1945103f509" />
 
 # ejercicio 13 
+<img width="637" height="333" alt="image" src="https://github.com/user-attachments/assets/c325571d-5858-4ced-9bb9-da663f04660e" />
 
 solucion
-
+<img width="653" height="304" alt="image" src="https://github.com/user-attachments/assets/a4a31234-91dd-439a-92ce-3d0710b98b9f" />
 
 # ejercicio 14 
-
+<img width="636" height="332" alt="image" src="https://github.com/user-attachments/assets/57d49de5-0240-4c42-baeb-223848530c16" />
 
 solucion
-
+<img width="648" height="532" alt="image" src="https://github.com/user-attachments/assets/c6ed5953-0f69-4956-b779-282cf46ade0a" />
 
 # ejercicio 15 
+<img width="651" height="764" alt="image" src="https://github.com/user-attachments/assets/d6c9e1cd-2326-456e-ba9d-41b4230f3a1f" />
 
 solucion
+<img width="637" height="684" alt="image" src="https://github.com/user-attachments/assets/76b6a570-3a30-4c89-9ed0-2efcf919129b" />
+
 
