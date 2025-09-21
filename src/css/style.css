@@ -22,30 +22,49 @@ body {
   position: relative;
 }
 
-#header h1 { font-size: 24px; margin: 0.6em; }
-#header h2 { font-size: 20px; margin: 0.2em; }
+#header h1 {
+  font-size: 24px;
+  margin: 0.6em;
+}
+
+#header h2 {
+  font-size: 20px;
+  margin: 0.2em;
+}
 
 #content {
-  background: url("../img/bglightblue.png") repeat; 
-  white-space: normal;   /* asegura que los textos hagan salto de línea */
-  word-wrap: break-word; /* fuerza cortar palabras largas si es necesario */
+  background: url("../img/bglightblue.png") repeat;
+  white-space: normal;
+  /* asegura que los textos hagan salto de línea */
+  word-wrap: break-word;
+  /* fuerza cortar palabras largas si es necesario */
   clear: left;
   padding: 20px;
 }
 
-#content h2 { color: #000; font-size: 160%; margin: 0 0 .5em; }
+#content h2 {
+  color: #000;
+  font-size: 160%;
+  margin: 0 0 .5em;
+}
 
 ol {
   background: url("../img/bgblanco.png");
-    display: block;
-    list-style-type: decimal;
-    margin: 0;
-    padding-inline-start: 40px;
-    unicode-bidi: isolate;
+  display: block;
+  list-style-type: decimal;
+  margin: 0;
+  padding-inline-start: 40px;
+  unicode-bidi: isolate;
 }
-a { color: #429; text-decoration: none; }
 
-table, th, td {
+a {
+  color: #429;
+  text-decoration: none;
+}
+
+table,
+th,
+td {
   border: 1px solid black;
   border-collapse: collapse;
   padding: 4px;
@@ -61,13 +80,20 @@ table, th, td {
 }
 
 .foto-perfil {
-  float: right;          /* se coloca a la derecha */
-  width: 80px;           /* ajusta el tamaño */
-  height: 80px;          /* ajusta el tamaño */
-  border-radius: 20px;    /* hace la foto circular */
-  margin-top: -80px;     /* opcional: la sube un poco */
-  margin-right: 20px;    /* separación del borde derecho */
-  object-fit: cover;     /* recorta si la imagen no es cuadrada */
+  float: right;
+  /* se coloca a la derecha */
+  width: 80px;
+  /* ajusta el tamaño */
+  height: 80px;
+  /* ajusta el tamaño */
+  border-radius: 20px;
+  /* hace la foto circular */
+  margin-top: -80px;
+  /* opcional: la sube un poco */
+  margin-right: 20px;
+  /* separación del borde derecho */
+  object-fit: cover;
+  /* recorta si la imagen no es cuadrada */
 }
 
 
@@ -82,16 +108,21 @@ input[type="submit"] {
 /* -------- Pirámide centrada -------- */
 .piramide {
   display: flex;
-  flex-direction: column;   /* filas una debajo de otra */
-  align-items: center;      /* centra cada fila */
+  flex-direction: column;
+  /* filas una debajo de otra */
+  align-items: center;
+  /* centra cada fila */
   row-gap: 8px;
   width: 100%;
-  text-align: initial;      /* anula el justify heredado del body */
+  text-align: initial;
+  /* anula el justify heredado del body */
 }
 
 .piramide-row {
-  display: flex;            /* imágenes en fila */
-  justify-content: center;  /* centra imágenes en la fila */
+  display: flex;
+  /* imágenes en fila */
+  justify-content: center;
+  /* centra imágenes en la fila */
   column-gap: 6px;
   line-height: 0;
   width: 100%;
@@ -101,40 +132,35 @@ input[type="submit"] {
   width: 48px;
   height: 48px;
 }
- 
 
-
-/* ====== ejercicio15: tablero alfil ====== */
-table.tablero {
+table,
+td {
+  text-align: center;
   border-collapse: collapse;
-  margin-top: 8px;
-}
-table.tablero td { text-align: center; border: 0; }
-
-tr.marron, td.borde {
-  background-color: brown; color: #fff; font-weight: bold;
 }
 
-td.sq { width: 48px; height: 48px; position: relative; }
-td.negro  { background: #000; }
-td.blanco { background: #fff; }
-
-/* Casilla origen (alfil) */
-td.origin { box-shadow: inset 0 0 0 9999px rgba(52,152,219,.18); }
-td.origin img { width: 40px; height: 40px; }
-
-/* Casillas alcanzables */
-td.move {
-  outline: 3px solid #f1c40f;
-  box-shadow: inset 0 0 0 9999px rgba(243,156,18,.35);
-  /* Si prefieres un punto circular en vez de colorear: */
-  /* overflow: hidden; }
-  td.move::after{
-    content: ""; position:absolute; inset:0;
-    margin:auto; width:18px; height:18px; border-radius:50%;
-    background: rgba(243,156,18,.75);
-  } */
+td.sq {
+  width: 48px;
+  height: 48px;
+  text-align: center;
 }
 
-/* Opcional: texto de coordenadas centrado en cabeceras */
-tr.marron td { width: 48px; }
+td.negro {
+  background: #000;
+}
+
+td.blanco {
+  background: #fff;
+}
+
+tr.marron,
+td.borde {
+  background: brown;
+  color: #fff;
+  font-weight: bold;
+}
+
+td img {
+  width: 40px;
+  height: 40px;
+}
