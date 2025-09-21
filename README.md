@@ -12,7 +12,7 @@ solucion
 <img width="638" height="318" alt="image" src="https://github.com/user-attachments/assets/86b28b19-2955-4336-bb07-60c4665c71b4" />
 
 # ejercicio 2 
-<img width="658" height="291" alt="image" src="https://github.com/user-attachments/assets/7e18a16d-351d-469d-98cf-81fbff91e0aa" />
+<img width="622" height="272" alt="image" src="https://github.com/user-attachments/assets/23fe9e53-d7d4-4d76-953d-50aa226db7a0" />
 
 solucion
 
